@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.DSRfiveDActivity">
+
+    <ImageView
+        android:id="@+id/dsr5d"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dsr5" />
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/dsr5d"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/card_view1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="16dp"
+        android:backgroundTint="@color/dark_orange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/price"
+            android:text="Rs.2800"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="379dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/card_view1"
+        app:layout_constraintTop_toBottomOf="@+id/card_view1">
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner:Karthik Acharya"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/contact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Number:7612991902"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/available1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Time:4pm - 8pm"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:text="Description:-"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/L1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1">
+
+        <TextView
+            android:id="@+id/furnishing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Furnishing: Semi Furnished"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/available_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available from: Available now"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/description_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="About this property:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_marginTop="8dp"
+            android:text="If you are looking for a modern room on rent, this room can be your perfect choice. It is a 1 BHK Apartment designed to meet your space and lifestyle needs. The 1 BHK unit is semi furnished. This rented 1 BHK property is spacious and well-designed, with access to all the conveniences for any modern home seeker."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/backButton1"
+        android:layout_width="45dp"
+        android:layout_height="33dp"
+        android:padding="8dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

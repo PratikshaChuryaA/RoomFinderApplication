@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoomFinderApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".screen.SSWABsixNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRelevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRtwelveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRtenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRnineDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSReightDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRsevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRsixDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRfiveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRfourDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRthreeDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRtwoDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSRoneDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABtwelveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABelevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABtenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABnineDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABeigthDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABsevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABsixDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABfiveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABfourDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABthreeDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABtwoDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DSWABoneDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABtwelveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABeleevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABtenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABnineDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABeightDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABsevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABfiveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABfourDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABthreeDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABtwoDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSWABoneDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRtwelveDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRelevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRtenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRnineDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSREigthDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRsevenDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRfifthDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRfourthDActivityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRtDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SSRsDActivity"
+            android:exported="false" />
+        <activity android:name=".screen.SSRsixxDActivity" />
+        <activity
+            android:name=".screen.SSRfDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.PVSDSRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.PVSDSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.PVSSSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarKatteDSRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarKatteDSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarKatteSSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FarangipeteDSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FarangipeteDSRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FarangipeteSSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.CarstreetDSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.CarstreetDSRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.CarstreetSSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarDSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarDSRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarSSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.HomeSSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.HomeSSRActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".screen.HomeDSWABActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarKatteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.CarstreetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.PVSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FarangipeteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AdyarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.PreferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.HomeDSRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.RoomFinderApplication" />
+        <activity
+            android:name=".screen.SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.RoomFinderApplication" />
+        <activity
+            android:name=".screen.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.RoomFinderApplication" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

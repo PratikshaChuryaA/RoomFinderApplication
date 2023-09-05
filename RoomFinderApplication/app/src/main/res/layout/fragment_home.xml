@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:text="Hello,"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/room_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="16dp"
+                android:text="Room Finder User!"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/user_name"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                >
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/bg_search"
+                    android:padding="16dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="search...."
+                    android:drawableStart="@drawable/baseline_search_24"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/light_grey"
+                android:elevation="10dp"
+                android:text="Rooms Available"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_category1"
+                android:layout_width="106dp"
+                android:layout_height="410dp"
+                android:layout_below="@id/textViewCategory"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home1_image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home1_image1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room2" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home1_image1"
+                        android:layout_alignStart="@+id/card_home1_image1"
+                        android:layout_alignEnd="@+id/card_home1_image1"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:maxLines="1"
+                        android:text="PVS"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home2_image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home2_image1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room5" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/card_home2_image1"
+                        android:layout_alignStart="@+id/card_home2_image1"
+                        android:layout_alignEnd="@+id/card_home2_image1"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="-2dp"
+                        android:maxLines="1"
+                        android:text="Adyar Katte"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home2_image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home2_image2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room8" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home2_image2"
+                        android:layout_alignStart="@+id/card_home2_image2"
+                        android:layout_alignEnd="@+id/card_home2_image2"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:maxLines="2"
+                        android:text="Adyar"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_category"
+                android:layout_width="wrap_content"
+                android:layout_height="409dp"
+                android:layout_below="@id/textViewCategory"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room1" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home_image"
+                        android:layout_alignStart="@+id/card_home_image"
+                        android:layout_alignEnd="@+id/card_home_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:maxLines="1"
+                        android:text="PVS"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home1_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home1_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room4" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home1_image"
+                        android:layout_alignStart="@+id/card_home1_image"
+                        android:layout_alignEnd="@+id/card_home1_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:maxLines="1"
+                        android:text="Carstreet"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home2_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home2_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room7" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@+id/card_home2_image"
+                        android:layout_alignStart="@+id/card_home2_image"
+                        android:layout_alignEnd="@+id/card_home2_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="1dp"
+                        android:maxLines="1"
+                        android:text="Farangipete"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="8dp">
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_category2"
+                android:layout_width="wrap_content"
+                android:layout_height="410dp"
+                android:layout_below="@id/textViewCategory"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home1_image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home1_image3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room3" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home1_image3"
+                        android:layout_alignStart="@+id/card_home1_image3"
+                        android:layout_alignEnd="@+id/card_home1_image3"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:maxLines="1"
+                        android:text="Carstreet"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="30dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home_image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home_image3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room6" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home_image3"
+                        android:layout_alignStart="@+id/card_home_image3"
+                        android:layout_alignEnd="@+id/card_home_image3"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:maxLines="1"
+                        android:text="Adyar"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_home2_image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="16dp">
+
+                        <ImageView
+                            android:id="@+id/home2_image3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/room9" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_home2_image3"
+                        android:layout_alignStart="@+id/card_home2_image3"
+                        android:layout_alignEnd="@+id/card_home2_image3"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="1dp"
+                        android:maxLines="1"
+                        android:text="Farangipete"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="8dp">
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/top_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top deals"
+                android:layout_below="@+id/linear_category"
+                android:textStyle="bold"
+                android:background="@color/light_grey"
+                android:textSize="20sp"
+                android:layout_marginTop="200dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/top_deal_RV"
+                android:layout_below="@+id/top_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/light_grey"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorLink="@color/white" />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
